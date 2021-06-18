@@ -1,11 +1,11 @@
 #include <iostream>
 #include "Map.h"
 
-extern const int w = 10;
+const int w = 10;
 
-extern int map[w][h] = {};
+int map[w][h] = {};
 
-extern void InitMap(){
+void InitMap(){
 	std::cout << "h address is " << &h << std::endl;
 	for (int x = 0; x < w; ++x){
 		for (int y = 0; y < h; ++y) {
